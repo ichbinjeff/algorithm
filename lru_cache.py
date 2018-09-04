@@ -47,7 +47,6 @@ class LRUCache(object):
                 del self.lookup[self.tail.prev.key]
                 self.delete_node(self.tail.prev)
             node = ListNode(key, value)
-
             self.lookup[key] = node
 
         self.move_to_head(node)

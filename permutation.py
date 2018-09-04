@@ -18,5 +18,5 @@ class Solution(object):
     			continue
     		level.append(nums[i])
     		self._permute(rst, level, nums)
-    		level.remove(nums[i])
+    		level.pop()
     	
